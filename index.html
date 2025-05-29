@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#333333">
+  <title>Couturier Créatif</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/web-app-manifest-192x192.png">
+  <script defer src="app.js"></script>
+  </head>
+<body>
+
+<header>
+  <h1>Couturier Créatif</h1>
+  <nav>
+    <button onclick="filter('homme')">Homme</button>
+    <button onclick="filter('femme')">Femme</button>
+    <button onclick="filter('all')">Tout</button>
+    <button onclick="showContact()">Contact</button>
+  </nav>
+</header>
+
+<main id="catalogue">
+  <!-- Homme -->
+  <div class="item homme">
+    <img src="images/chemise.jpg.png" alt="Chemise Homme">
+    <h2>Chemise élégante</h2>
+    <p>15 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item homme">
+    <img src="images/chemise1.jpg.jpg" alt="Chemise Homme">
+    <h2>Chemise élégante</h2>
+    <p>15 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item homme">
+    <img src="images/chemise2.jpg.jpg" alt="Chemise Homme">
+    <h2>Chemise élégante</h2>
+    <p>17 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item homme">
+    <img src="images/chemise3.jpg.jpg" alt="Chemise Homme">
+    <h2>Chemise élégante</h2>
+    <p>14 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item homme">
+    <img src="images/chemise4.jpg.jpg" alt="Chemise Homme">
+    <h2>Chemise élégante</h2>
+    <p>18 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+
+  <!-- Femme -->
+  <div class="item femme">
+    <img src="images/robe.jpg.png" alt="Robe Femme">
+    <h2>Robe de soirée</h2>
+    <p>25 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item femme">
+    <img src="images/robe1.jpg.jpg" alt="Robe Femme">
+    <h2>Robe de soirée</h2>
+    <p>30 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item femme">
+    <img src="images/robe2.jpg.jpg" alt="Robe Femme">
+    <h2>Robe de soirée</h2>
+    <p>25 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item femme">
+    <img src="images/robe3.jpg.jpg" alt="Robe Femme">
+    <h2>Robe de soirée</h2>
+    <p>35 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item femme">
+    <img src="images/robe4.jpg.jpg" alt="Robe Femme">
+    <h2>Robe de soirée</h2>
+    <p>35 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+  <div class="item femme">
+    <img src="images/robe5.jpg.jpg" alt="Robe Femme">
+    <h2>Robe de soirée</h2>
+    <p>25 000 FCFA</p>
+    <a href="commande.html" class="btn">Commander</a>
+  </div>
+</main>
+
+<!-- Formulaire contact -->
+<div id="contactSection" class="contact" style="display: none;">
+  <h1>Vos coordonnées</h1>
+  <form>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" required><br><br>
+
+    <label for="text">Message :</label>
+    <textarea id="text" name="text" rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Couturier Créatif</p>
+</footer>
+
+</body>
+</html>
